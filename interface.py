@@ -11,7 +11,7 @@ def start1():
         root.destroy()
 
     root.geometry("800x600")
-    root.filename=filedialog.askopenfilename(initialdir="A:\SEM 6\Mini Project/Final/Images",title="Select a Image")
+    root.filename=filedialog.askopenfilename(initialdir="Images",title="Select a Image")
 
     img=Image.open(root.filename)
     temp=img.resize((600,400),Image.Resampling.BILINEAR)
